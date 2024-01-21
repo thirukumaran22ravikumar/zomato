@@ -15,7 +15,7 @@ export default function HomeScreen({navigation}){
     const [indexCheck,setIndexCheck] = useState("0");
     return(
         <View style= {styles.container}>
-            <HomeHeader />
+            <HomeHeader navigation = {navigation}/>
             <ScrollView
              stickyHeaderIndices={[0]}
              showsVerticalScrollIndicator ={true}

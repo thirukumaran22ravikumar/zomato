@@ -1,4 +1,4 @@
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 import React ,{useState,useRef} from 'react'
 import { View,Text,StyleSheet,Dimensions,TextInput } from 'react-native'
 import {colors,parameters,title} from "../../global/styles"

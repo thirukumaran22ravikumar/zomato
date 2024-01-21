@@ -1,4 +1,4 @@
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 import React from 'react'
 import { View,Text,StyleSheet ,StatusBar} from 'react-native'
 import { colors } from './src/global/styles'
