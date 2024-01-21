@@ -1,4 +1,4 @@
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 import React ,{useState,useRef} from 'react'
 import { View,Text,StyleSheet,Dimensions,TextInput } from 'react-native'
 import {colors,parameters,title} from "../../global/styles"
@@ -69,7 +69,7 @@ export default function SignInScreen({navigation}){
                     buttonStyle = {parameters.styledButton}
                     titleStyle = {parameters.buttonTitle}
                     onPress={() =>{
-                        navigation.navigate('DrawerNavigator')
+                        navigation.navigate('RootClientTabs')
                     }}       
 />
             </View>

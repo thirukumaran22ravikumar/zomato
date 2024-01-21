@@ -1,4 +1,4 @@
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 import React from "react";
 //import {createStackNavigator,TransitionsPresets} from "@react-navigation/native-stack"
 //import { createNativeStackNavigator, TransitionPresets} from '@react-navigation/native-stack';
@@ -30,6 +30,15 @@ export default function AuthStack(){
                 // }}
             /> 
 
+
+            <Auth.Screen
+                name = "HomeScreen"
+                component = {HomeScreen}
+                // options={{
+                //     headerShown: false,
+                //     ...TransitionPresets.RevealFromBottomAndroid
+                // }}
+            /> 
             <Auth.Screen
                 name = "SignInScreen"
                 component = {SignInScreen}
