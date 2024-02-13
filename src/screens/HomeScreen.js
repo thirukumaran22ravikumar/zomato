@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { View,Text,StyleSheet,TouchableOpacity,ScrollView,FlatList ,Pressable ,Image, Dimensions} from "react-native"; 
+import { View,Text,StyleSheet,TouchableOpacity,ScrollView,FlatList ,Pressable ,Image, Dimensions,StatusBar} from "react-native"; 
 import {Icon} from 'react-native-elements'
 import HomeHeader from "../components/HomeHeader";
 import { colors,parameters } from '../global/styles'; 
@@ -15,6 +15,11 @@ export default function HomeScreen({navigation}){
     const [indexCheck,setIndexCheck] = useState("0");
     return(
         <View style= {styles.container}>
+                <StatusBar
+                    translucent
+                    barStyle="light-content"
+                    backgroundColor="rgba(255, 140, 82,1)"
+                />
             <HomeHeader navigation = {navigation}/>
             <ScrollView
              stickyHeaderIndices={[0]}
@@ -216,6 +221,7 @@ const styles = StyleSheet.create({
 
     container:{
         flex:1,
+        paddingTop:30
 
     },
     deliveryButton:{
